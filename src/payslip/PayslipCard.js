@@ -6,7 +6,7 @@ function PayslipCard(props) {
 
     return (
         <div className="payslip-card">
-            <h1>{name}</h1>
+            <span className="name">{name}</span>
             <table>
                 <thead>
                     <th>Pay Period</th>

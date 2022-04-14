@@ -1,5 +1,14 @@
 .payslip-card {
+    border: 1px solid black;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
     width: 60%;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 600;
 }

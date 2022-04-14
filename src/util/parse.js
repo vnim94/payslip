@@ -10,7 +10,6 @@ function parseCsv(file) {
 }
 
 export function createInput(data) {
-    console.log(data);
     return {
         firstName: data[0],
         lastName: data[1],

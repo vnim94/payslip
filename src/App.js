@@ -36,7 +36,26 @@ function App() {
                 <input id="upload" type="file" onChange={handleUpload} hidden={true}></input>
             </div>
             <b>Upload a csv file with data in the following format:</b>
-            <i>FIRST_NAME,LAST_NAME,SALARY,SUPER_RATE(%),PAY_PERIOD(day month - day month)</i>
+            <table>
+                <thead>
+                    <tr>
+                        <th>FIRST_NAME</th>
+                        <th>LAST_NAME</th>
+                        <th>SALARY</th>
+                        <th>SUPER_RATE</th>
+                        <th>PAY_PERIOD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>David</td>
+                        <td>Rudd</td>
+                        <td>100000</td>
+                        <td>9%</td>
+                        <td>01 March - 31 March</td>
+                    </tr>
+                </tbody>
+            </table>
             <div className="payslips">
             {data && data.map((entry, index) => {
                 const errors = validator.validateInput(entry);
